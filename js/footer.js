@@ -6,7 +6,7 @@ const footerContent = `
 	      </div>
 	      <div class="col-lg-3 col-sm-12">
 	        <b>Our Contact</b>
-	        <ul class="list-unstyled mt-4 text-black-50">
+	        <ul class="list-unstyled mt-3 text-black-50">
 	          <li>#60-180, 94 Ave, S.E, Calgary, AB T2J 3G8</li>
 	          <li>Mon-Fri: 9am-5pm</li>
 	          <li>
@@ -15,8 +15,8 @@ const footerContent = `
 	        </ul>
 	      </div>
 	      <div class="col-lg-3 col-sm-12">
-	        <b>Social Us</b>
-	        <ul class="list-unstyled mt-4 text-black-50">
+	        <b>Socials</b>
+	        <ul class="list-unstyled mt-3 text-black-50">
 	          <li>
 	          	<a href="https://www.facebook.com/" title="Facebook Page" class="align-items-center d-flex text-dark text-decoration-none">
 	          		<i class="fa-brands fa-facebook-square pr-2 fa-2x"></i> Facebook Page
@@ -36,7 +36,7 @@ const footerContent = `
 	      </div>
 	      <div class="col-lg-3 col-sm-12">
 	        <b>Subscribe</b>
-	        <div class="d-flex mt-4 mb-3">
+	        <div class="d-flex mt-3 mb-3">
 	          <input type="email" class="border-right-0 border-secondary form-control rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
 	          <button class="border border-left-0 border-secondary btn rounded-0"><i class="fa fa-arrow-right"></i></button>
 	        </div>
@@ -47,6 +47,6 @@ const footerContent = `
 	      </div>
 	    </div>
 	  </div>
-	  <p class="m-0 p-0 text-center">Copyright © 2024 MapleHeap Technologies Inc. All rights reserved.</p>
+	  <p class="m-0 p-0 pb-3 text-center">Copyright © 2024 MapleHeap Technologies Inc. All rights reserved.</p>
 `;
 document.getElementById('_footer').innerHTML = footerContent;

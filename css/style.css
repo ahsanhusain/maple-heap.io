@@ -365,3 +365,6 @@ canvas{
 #_footer{
   background-color: #EBEADF!important;
 }
+
+.module:nth-of-type(odd) { background-color: #f4fbfa!important}
+.module:nth-of-type(even) { color:white; background-color: #01405c!important }
