@@ -1,10 +1,20 @@
 <?php
-// the message
-$msg = "First line of text\nSecond line of text";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = htmlspecialchars($_POST['name']);
+    $email = htmlspecialchars($_POST['email']);
+    $message = htmlspecialchars($_POST['message']);
 
-// use wordwrap() if lines are longer than 70 characters
-$msg = wordwrap($msg,70);
+    $to = "atif.ullah.baig@gmail.com";
+    $subject = "New Contact Form Submission";
+    $body = "Name: $name\nEmail: $email\nMessage: $message";
+    $headers = "From: $email";
 
-// send email
-mail("talha.solutionq786@gmail.com","My subject",$msg);
+    if (mail($to, $subject, $body, $headers)) {
+        echo "Message sent successfully!";
+    } else {
+        echo "Failed to send the message.";
+    }
+} else {
+    echo "Invalid request.";
+}
 ?>
